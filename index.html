@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="apologywebsitesheet.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+  <div class="topnav">
+    <a class="active" href="Tatyana_Apology_Website.html">Home</a>
+    <a href="Letterpage.html">Letter Page</a>
+  <div class="search-container">
+  <form action="/search" method="get">
+    <input type="text" placeholder="Search..." name="query">
+    <button type="submit">Search</button>
+  </form>
+</div>
+</div>
+
+<div class="content-box"> 
+<p><h1>Introduction</h1></p>
+<br>
+<br>
+<br>
+<p><h2>My Apology</h2></p>
+<p>to: Tatyana</p>
+<p>from: Zamir</p>
+<p>This letter that I am writing is to be made out to the very lovely woman I have chosen to have in my life and that I prayed for. 
+I loved you ever since <br> I kissed you back in CD Morris’s office at Beckwith hall. 
+In those days I was a wide innocent new to love. <br>I never knew the journey me and you would take together. 
+I never knew me and you would have the emotional bond with me and you would experience. 
+<br>I love you so very much and I am sorry for all the pain I have put you through and hopefully this letter would make it all better. 
+I do not know if you will be accepting of this letter, <br>this gesture or of anything I will do to make the situation better. 
+I only hope you express my apology and maybe this will show you where I am at emotionally, spiritually, <br>and where I am going in the future. 
+I am only human and I am bound to mess up but that doesn’t mean I am too proud to apologize and make it up. <br>And that is what I intend to do 
+and will do going forward. Love is patient, love is kind and I seek to show you that with this letter. 
+<br>I poured my heart and soul into this letter and all I am asking you to do is to read it. 
+I developed it into a website so that you are able to look at it on your phone <br>without much strain on
+your devices and to show how much effort I am willing to put into our relationship by creating this website.
+</P> 
+ 
+</div> 
+ <script>
+function searchPage() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const content = document.body.innerHTML;
+  const regex = new RegExp(`(${input})`, "gi");
+
+  if (!input) return;
+
+  // Remove previous highlights
+  document.body.innerHTML = content.replace(/<mark class="highlight">([^<]*)<\/mark>/gi, '$1');
+
+  // Apply new highlights
+  document.body.innerHTML = document.body.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+}
+</script>
+ 
+</body>
+</html>
